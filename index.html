@@ -1,110 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/darkTheme.css" id="CSStheme">
-    <title>Portfolio</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<title>Portfolio</title>
 </head>
 
-<body id="main">
-	
-	<a href="https://github.com/twofist">
-		<img class="img-main" src="images/other/avatar.png">
-	</a>
-	
-	<a href="https://github.com/twofist">
-		<img class="img-ghub" src="images/other/github.png" alt="Github" height="42" width="42">
-	</a>
-	
-	<h1>
-		<div id="text">
-			<div id="txt">
-				Welcome
-				<br>
-				I am twofist and I am on Training (Ausbildung) in computer science in Germany.
-			</div>
-		</div>
-	</h1>
-	
-	<h3>
-		<div id="langlist">
-			<div class="languages">
-				<img class="img-circle" src="images/languages/en.png" alt="en" height="52" width="52">
-				<img class="img-circle" src="images/languages/de.png" alt="de" height="52" width="52">
-				<img class="img-circle" src="images/languages/nl.png" alt="nl" height="52" width="52">
-			</div>
-			<div class="programminglanguages">
-				<img class="img-circle" src="images/programminglanguages/javascript.png" alt="javascript" height="52" width="52">
-				<div id="txt1">
-					JavaScript
-				</div>
-			</div>
-			<div class="programminglanguages">
-				<img class="img-circle" src="images/programminglanguages/typescript.png" alt="typescript" height="52" width="52">
-				<div id="txt1">
-					TypeScript
-				</div>
-			</div>
-			<div class="programminglanguages">
-				<img class="img-circle" src="images/programminglanguages/java.png" alt="java" height="52" width="52">
-				<div id="txt1">
-					Java
+<body>
+	<main>
+		<div class="leftContainer">
+			<div class="descriptionContainer" id="description">
+				<div class="imageContainer">
+					<div class="avatarContainer" id="avatar">
+					</div>
+					<div class="githubLogoContainer" id="githubLogo">
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div id="projects">
-			
+		<div class="rightContainer">
+			Repositories
+			<div class="repositoriesContainer" id="repositories">
+			</div>
 		</div>
-		
-		<div id="contacts">
-				<form action="/ayy">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" placeholder="Your name">
-					<br>
-					<label for="email">Email Adress:</label>
-					<input type="text" id="email" name="email" placeholder="Your email">
-					<br>
-					<label for="subject">Email Content:</label>
-					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-					<br>
-					<input type="submit" value="Submit">
-				  </form>
-		</div>
-	</h3>
-	
-	<div id="navbar">
-		<h2>
-			<div id="langs" onclick="show(this)">
-				<a href="#languages" id="languages">
-					<div id="L">
-						Languages
-					</div>
-				</a>
-			</div>
-			<div id="projs" onclick="show(this)">
-				<a href="#projects" id="project">
-					<div id="P">
-						Projects
-					</div>
-				</a>
-			</div>
-			<div id="conts" onclick="show(this)">
-				<a href="#contact" id="contact">
-					<div id="C">
-						Contact
-					</div>
-				</a>
-			</div>
-		</h2>
-	</div>
-
-	<button id="themeSwitch" onclick="switchTheme()">Change Theme</button>
-	
-    <script type="text/javascript" src="index.js">
-    </script>
-	
+	</main>
 </body>
 
 </html>

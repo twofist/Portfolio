@@ -1,0 +1,154 @@
+::-webkit-scrollbar {
+    width:4px;
+    height:4px;
+}
+::-webkit-scrollbar-track {
+    background:rgba(29, 29, 29, 0.8);
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(0, 0, 0, 0.8);
+}
+
+body{
+    margin: 0;
+    font-family: "Helvetica", "Arial", "Times New Roman";
+    font-size: 50px;
+    color: black;
+}
+
+main{
+    display:flex;
+}
+
+.leftContainer{
+    background-color: rgb(100, 100, 100, 0.8);
+    padding-top: 4vh;
+    padding-right: 3vw;
+    padding-bottom: 4vh;
+    padding-left: 3vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.descriptionContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imageContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.githubLogoContainer{
+    align-self: flex-end;
+}
+
+.avatarImage{
+    max-height: 250px;
+    width:auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.githubImage{
+    max-height: 75px;
+    width:auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.languagesContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.language{
+    border-radius: 50%;
+    height:52px;
+    width:52px;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.descriptionName{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.descriptionLogin{
+    font-size: 25px;
+    padding: 2px;
+}
+
+.descriptionBio{
+    font-size: 30px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.descriptionLocation, .descriptionEmail, .descriptionBlog{
+    padding: 2px;
+    font-size: 25px;
+}
+
+.descriptionBlog{
+    color: blue;
+}
+
+.rightContainer{
+    background-color: rgb(120, 120, 120, 0.8);
+    padding-top: 10vh;
+    padding-right: 2vw;
+    padding-bottom: 10vh;
+    padding-left: 33vw;
+}
+
+.repositoriesContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    max-width: 75vw;
+}
+
+.repoContainer{
+    text-decoration: none;
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.08);
+    padding: 2.5vh 2%;
+    margin: 2vh 0px;
+    color: black;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repoContainer:hover{
+    transform: scale(1.1);
+}
+
+.repoTitle{
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: 25px;
+}
+
+.repoDetails {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
